@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-white" href="#">Groceries Store</a>
+        <button class="navbar-toggler  bg-success" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="fruits.html">
+                        Fruits
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Exotic.html">
+                        Exotic Fruits & Veggies
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="vegetables.html">
+                        Vegetables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="cart.html">
+                        Cart <span class="badge badge-success " id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="apple.jpeg" class="card-img-top" alt="kiwi">
+                    <div class="card-body">
+                        <h5 class="card-title">Apples</h5>
+                        <p class="card-text">Price:10 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Apples', 10)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="banana.jpeg" class="card-img-top" alt="Banana">
+                    <div class="card-body">
+                        <h5 class="card-title">Banana</h5>
+                        <p class="card-text">Price: 5 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Banana', 5)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="oranges.jpeg" class="card-img-top" alt="Orange">
+                    <div class="card-body">
+                        <h5 class="card-title">Oranges</h5>
+                        <p class="card-text">Price: 8 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Orange', 8)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="pomegranate.jpeg" class="card-img-top" alt="pomegranate">
+                    <div class="card-body">
+                        <h5 class="card-title">Pomegranate</h5>
+                        <p class="card-text">Price:15 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Pomegranate', 15)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="guava.jpeg" class="card-img-top" alt="guava">
+                    <div class="card-body">
+                        <h5 class="card-title">Guava</h5>
+                        <p class="card-text">Price: 15 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Guava', 15)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="mosambi.jpeg" class="card-img-top" alt="Mosambi">
+                    <div class="card-body">
+                        <h5 class="card-title">Mosambi</h5>
+                        <p class="card-text">Price: 6 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Mosambi', 6)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="watermelon.jpeg" class="card-img-top" alt="Watermelon">
+                    <div class="card-body">
+                        <h5 class="card-title">Watermelon</h5>
+                        <p class="card-text">Price:20 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Watermelon', 20)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="grapes.jpeg" class="card-img-top" alt="grapes">
+                    <div class="card-body">
+                        <h5 class="card-title">Grapes</h5>
+                        <p class="card-text">Price: 30 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Grapes', 30)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="muskmelon.jpeg" class="card-img-top" alt="Muskmelon">
+                    <div class="card-body">
+                        <h5 class="card-title">Muskmelon</h5>
+                        <p class="card-text">Price: 20 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Muskmelon', 20)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="mango.jpeg" class="card-img-top" alt="mango">
+                    <div class="card-body">
+                        <h5 class="card-title">Mango</h5>
+                        <p class="card-text">Price:30 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Mango', 30)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="greenapple.jpeg" class="card-img-top" alt="gapple">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Apple</h5>
+                        <p class="card-text">Price: 15 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Green Apple', 15)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="papaya.jpeg" class="card-img-top" alt="Papaya">
+                    <div class="card-body">
+                        <h5 class="card-title">Papaya</h5>
+                        <p class="card-text">Price: 25 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Papaya', 25)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center py-3">
+        <p class="mb-0">&copy; 2023 Groceries Store. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

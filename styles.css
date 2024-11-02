@@ -1,0 +1,19 @@
+/* Center-align text for the product cards */
+.card-body {
+    text-align: center;
+}
+
+/* Styling the footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #14d631;
+}
+
+/* Product images sizing */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}

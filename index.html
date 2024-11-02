@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-white" href="#">Groceries Store</a>
+        <button class="navbar-toggler  bg-success" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="fruits.html">
+                        Fruits
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Exotic.html">
+                        Exotic Fruits & Veggies
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="vegetables.html">
+                        Vegetables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="cart.html">
+                        Cart <span class="badge badge-success " id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="jumbotron jumbotron-fluid text-center bg-success text-white">
+        <div class="container">
+            <h1 class="display-4">Fresh Groceries Delivered to You</h1>
+            <p class="lead">Find the best fruits and vegetables with just one click!</p>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="kiwi.jpeg" class="card-img-top" alt="kiwi">
+                    <div class="card-body">
+                        <h5 class="card-title">Kiwi</h5>
+                        <p class="card-text">Price: 150 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Kiwi', 150)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="banana.jpeg" class="card-img-top" alt="Banana">
+                    <div class="card-body">
+                        <h5 class="card-title">Banana</h5>
+                        <p class="card-text">Price: 5 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Banana',5)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="carrot.jpeg" class="card-img-top" alt="Carrot">
+                    <div class="card-body">
+                        <h5 class="card-title">Carrot</h5>
+                        <p class="card-text">Price: 30 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Carrot', 30)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center py-3">
+        <p class="mb-0">&copy; 2023 Groceries Store. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

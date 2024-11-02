@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-white" href="#">Groceries Store</a>
+        <button class="navbar-toggler  bg-success" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="fruits.html">
+                        Fruits
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Exotic.html">
+                        Exotic Fruits & Veggies
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="vegetables.html">
+                        Vegetables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="cart.html">
+                        Cart <span class="badge badge-success " id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="kiwi.jpeg" class="card-img-top" alt="Kiwi">
+                    <div class="card-body">
+                        <h5 class="card-title">Kiwi</h5>
+                        <p class="card-text">Price:150 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Kiwi', 150)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="strawberry.jpeg" class="card-img-top" alt="strawberry">
+                    <div class="card-body">
+                        <h5 class="card-title">StrawBerry</h5>
+                        <p class="card-text">Price: 120 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('strawberry', 120)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="babycorn.jpeg" class="card-img-top" alt="babycorn">
+                    <div class="card-body">
+                        <h5 class="card-title">Baby Corn</h5>
+                        <p class="card-text">Price: 100 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Baby Corn', 100)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="dragonfruit.jpeg" class="card-img-top" alt="dragonfruit">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">Dragon Fruit:150 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Dragon Fruit', 150)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="avacado.jpeg" class="card-img-top" alt="avacado">
+                    <div class="card-body">
+                        <h5 class="card-title">Avacado</h5>
+                        <p class="card-text">Price: 130 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Avacado', 130)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="broccoli.jpeg" class="card-img-top" alt="broccoli">
+                    <div class="card-body">
+                        <h5 class="card-title">Broccoli</h5>
+                        <p class="card-text">Price: 85 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Broccoli', 85)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="cherry.jpeg" class="card-img-top" alt="cherry">
+                    <div class="card-body">
+                        <h5 class="card-title">Cherry</h5>
+                        <p class="card-text">Price:120 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Cherry', 120)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="yellowcapsi.jpeg" class="card-img-top" alt="yellow capsicum">
+                    <div class="card-body">
+                        <h5 class="card-title">Yellow Capsicum</h5>
+                        <p class="card-text">Price: 70 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Yellow Capsicum', 70)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="amaranth.jpeg" class="card-img-top" alt="amaranth">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Amaranth</h5>
+                        <p class="card-text">Price: 125 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Red Amaranth', 125)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="plum.jpeg" class="card-img-top" alt="plum">
+                    <div class="card-body">
+                        <h5 class="card-title">Plum</h5>
+                        <p class="card-text">Price:80 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Plum', 80)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="pear.jpeg" class="card-img-top" alt="pear">
+                    <div class="card-body">
+                        <h5 class="card-title">Pear</h5>
+                        <p class="card-text">Price: 50 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('Pear',50)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="blueberry.jpeg" class="card-img-top" alt="blueberry">
+                    <div class="card-body">
+                        <h5 class="card-title">Blue Berry</h5>
+                        <p class="card-text">Price: 35 Rs</p>
+                        <button class="btn btn-success btn-block" onclick="addToCart('blueberry', 35)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center py-3">
+        <p class="mb-0">&copy; 2023 Groceries Store. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
